@@ -1,4 +1,5 @@
-#include "sumar.h"   
+#include "sumar.h"
+#include "restar.h"
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
@@ -9,5 +10,7 @@ int main(int argc, char const *argv[]) {
     scanf("%d", &b);
     int resultado = sumar(a, b);
     printf ("La suma es: %d\n", resultado);
+    int resultado_resta = restar(a, b);
+    printf("La resta es: %d\n", resultado_resta);
     return 0;
 }
